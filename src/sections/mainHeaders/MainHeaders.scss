@@ -1,0 +1,62 @@
+@import '../../tokens/tokens.scss';
+@import '../../tokens/mixins.scss';
+
+.main-headers-container {
+    padding: 16px 344px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 23px;
+
+    @include devices(tablet) {
+        padding: 16px 40px;
+    }
+
+    @include devices(mobile) {
+        padding: 16px;
+    }
+
+    .main-header-title {
+        font-family: $font-family;
+        font-style: $font-style;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-xl;
+        line-height: $line-height-xl;
+        text-align: center;
+        color: $black;
+
+        @include devices(tablet) {
+            font-size: $font-size-large;
+            line-height: $line-height-large;
+        }
+
+        @include devices(mobile) {
+            font-size: $font-size-medium;
+            line-height: $line-height-medium;
+        }
+    }
+
+    .main-header-subtitle {
+        max-width: 730px;
+        font-family: $font-family;
+        font-style: $font-style;
+        font-weight: $font-weight-xnormal;
+        font-size: $font-size-normal;
+        line-height: $line-height-small;
+        text-align: center;
+        color: $gray;
+
+        @include devices(tablet) {
+            font-size: $font-size-normal;
+            line-height: $line-height-small;
+            max-width: 573px;
+        }
+
+        @include devices(mobile) {
+            font-size: $font-size-small;
+            line-height: $line-height-small;
+            max-width: 285px;
+        }
+    }
+}
