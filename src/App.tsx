@@ -1,5 +1,6 @@
 import './App.scss'
 import { Header } from './components/header/Header'
+import { GridContainer } from './sections/gridContainer/GridContainer'
 import { MainHeaders } from './sections/mainHeaders/MainHeaders'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <main className="App">
       <Header/>
       <MainHeaders/>
+      <GridContainer/>
     </main>
   )
 }
