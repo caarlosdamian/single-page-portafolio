@@ -1,0 +1,111 @@
+@import '../../tokens/tokens.scss';
+@import '../../tokens/mixins.scss';
+
+.about-container {
+    padding: 130px 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 125px;
+
+    @include devices(bigdesktop) {
+        gap: 250px;
+    }
+
+    @include devices(tablet) {
+        gap: 69px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-left: 0;
+        padding-right: 40px;
+    }
+
+    @include devices(mobile) {
+        flex-direction: column;
+        gap: 40px;
+        padding: 100px 38px;
+    }
+
+    .about-container-left {
+        @include devices(tablet) {
+            position: relative;
+            width: 1200px;
+            height: 445px;
+        }
+
+        @include devices(mobile) {
+            width: 100%;
+            height: 300px;
+        }
+
+        .about-profile-img {
+            width: 445px;
+            height: 445px;
+
+            @include devices(tablet) {
+                position: absolute;
+                left: -45px;
+                top: 0;
+                width: 364px;
+                height: 364px;
+            }
+
+            @include devices(mobile) {
+                position: block;
+                width: 300px;
+                height: 300px;
+                left: auto;
+            }
+        }
+    }
+
+    .about-container-right {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 34px;
+
+        @include devices(mobile) {
+            align-items: center;
+        }
+
+        .about-container-header {
+            font-family: $font-family;
+            font-style: $font-style;
+            font-weight: $font-weight-bold;
+            font-size: 40px;
+            line-height: 50px;
+            color: $black;
+
+            @include devices(tablet) {
+                font-size: 32px;
+                line-height: 40px;
+                max-width: 339px;
+            }
+
+            @include devices(mobile) {
+                font-size: 26px;
+                line-height: 33px;
+                text-align: center;
+            }
+
+        }
+
+        .about-container-subtitle {
+            font-family: $font-family;
+            font-style: $font-style;
+            font-weight: $font-weight-xnormal;
+            font-size: $font-size-normal;
+            line-height: $line-height-small;
+            color: $gray;
+
+            @include devices(mobile) {
+                font-size: 16px;
+                line-height: 26px;
+                text-align: center;
+            }
+
+        }
+    }
+}
