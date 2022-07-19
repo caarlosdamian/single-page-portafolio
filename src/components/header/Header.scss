@@ -1,0 +1,26 @@
+@import '../../tokens/mixins.scss';
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 165px;
+
+    @include devices(tablet) {
+        padding: 34px 40px;
+    }
+
+    @include devices(mobile) {
+        padding: 16px;
+    }
+
+    .header-logo {
+        max-width: 64px;
+        max-height: 64px;
+
+        @include devices(mobile) {
+            max-width: 48px;
+            max-height: 48px;
+        }
+    }
+}

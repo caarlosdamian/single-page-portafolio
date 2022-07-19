@@ -1,0 +1,37 @@
+@import '../../tokens/tokens.scss';
+@import '../../tokens/mixins.scss';
+
+.btn {
+    padding: 14px 45px;
+    border: none;
+    cursor: pointer;
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-small;
+    line-height: $line-height-small;
+    color: $light-brown;
+    border-radius: 28px;
+
+    @include devices(mobile) {
+        padding: 8px 28px;
+        font-size: $font-size-xsmall;
+        line-height: $line-height-medium;
+    }
+
+    &.primary {
+        background: $black;
+
+        &:hover {
+            background: $purple;
+        }
+    }
+
+    &.secondary {
+        background: $light-red;
+
+        &:hover {
+            background: $yellow;
+        }
+    }
+}
