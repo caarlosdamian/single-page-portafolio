@@ -27,6 +27,7 @@ export const Carousel = () => {
         slidesToShow={3}
         slidesToScroll={1}
         itemWidth={440}
+        
         responsive={[
           {
             breakpoint: 768,
@@ -68,7 +69,7 @@ export const Carousel = () => {
             }}
             key={item.id}
           >
-            <img src={item.img} alt={item.img} />
+            <img key={item.id} src={item.img} alt={item.img} />
           </Panel>
         ))}
       </Glider>

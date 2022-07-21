@@ -1,0 +1,87 @@
+@import "../../tokens/tokens.scss";
+@import "../../tokens/mixins.scss";
+
+.contact-container {
+  padding: 50px 165px;
+  @include devices(tablet) {
+    padding: 60px 40px;
+  }
+  @include devices(mobile) {
+    margin-top: 100px;
+    padding: 0 16px;
+    margin-bottom: 40px;
+  }
+  .black-container {
+    width: 1110px;
+    height: 320px;
+    background: #030303;
+    border-radius: 10px;
+    padding: 80px 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include devices(tablet) {
+      width: 690px;
+      height: 352px;
+      flex-direction: column;
+    }
+    @include devices(mobile) {
+      width: 343px;
+      height: 352px;
+      padding: 50px 24px;
+    }
+    .contact-left {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 25px;
+      flex-direction: column;
+      @include devices(tablet) {
+        justify-content: center;
+        align-items: center;
+      }
+
+      .contact-header {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        color: #fff7f0;
+        @include devices(tablet) {
+          font-size: 32px;
+          line-height: 40px;
+          text-align: center;
+        }
+        @include devices(mobile) {
+          font-size: 26px;
+          line-height: 33px;
+        }
+      }
+      .contact-description {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: #fff7f0;
+        @include devices(tablet) {
+          line-height: 28px;
+          text-align: center;
+          margin-bottom: 26px;
+        }
+        @include devices(mobile) {
+          font-size: 16px;
+          line-height: 26px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .contact-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+}
