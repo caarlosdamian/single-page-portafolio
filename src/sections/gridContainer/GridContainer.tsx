@@ -9,6 +9,7 @@ export const GridContainer = () => {
         <div
           className={`grid-container__item ${item.item}`}
           style={{ background: item.color }}
+          key={item.id}
         >
             <img src={item.photo} alt={item.photo} className="img-item" />
           <span className="grid-container__item__text">{item.title}</span>
