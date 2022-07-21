@@ -1,4 +1,5 @@
 import "./App.scss";
+import { Carousel } from "./components/carousel/Carousel";
 import { Header } from "./components/header/Header";
 import { About } from "./sections/about/About";
 import { GridContainer } from "./sections/gridContainer/GridContainer";
@@ -11,6 +12,7 @@ function App() {
       <MainHeaders />
       <GridContainer />
       <About />
+      <Carousel/>
     </main>
   );
 }

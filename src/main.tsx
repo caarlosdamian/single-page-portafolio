@@ -1,4 +1,6 @@
 import ReactDOM from 'react-dom/client'
+import 'glider-js/glider.min.css';
+
 import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
